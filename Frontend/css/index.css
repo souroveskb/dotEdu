@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.my-brand{
+    font-size: 2rem;
+    color: red;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.intro{
+    font-family: 'Inter', sans-serif;
+    background-image: url('../images/background1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.intro-section img{
+    width: 50%;
+    
+}
+.intro-text{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.intro-text p{
+    margin-left: 70px;
+    font-size: 2.3rem;
+    margin-top: 0;
+    padding: 0;
+}
