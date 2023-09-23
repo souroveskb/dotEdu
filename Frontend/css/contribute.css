@@ -1,0 +1,19 @@
+.my-contribute-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.my-question-text{
+    width: 610px;
+    height: 38px;
+    padding: 15px;
+}
+.ans-text-area{
+    width: 610px;
+    height: 300px;
+    padding: 15px;
+    margin-top: 30px;
+}

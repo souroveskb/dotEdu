@@ -1,6 +1,8 @@
 body{
     margin: 0;
 }
+
+/* navbar section design starts */
 .my-brand{
     color: rgb(8, 6, 48);
     font-size: 2rem;
@@ -9,12 +11,12 @@ body{
 .nav-item:hover{
     text-decoration: underline;
 }
+
+/* navbar section design ends */
+
+/* intro section design starts */
 .intro{
     font-family: 'Inter', sans-serif;
-    background-image: url('../images/background.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .intro-section{
@@ -36,6 +38,7 @@ body{
     flex-direction: column;
     margin-left: 100px;
     
+    
 }
 .intro-text h2{
     color: rgb(8, 6, 48);
@@ -47,10 +50,198 @@ body{
     margin-top: 0;
     padding: 0;
 }
+
+/* intro section design ends */
+
+/* what we offer design starts */
+.what-we-offer{
+    margin-top: 120px;
+}
+.offer-card{
+    display: flex;
+}
+.offer-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;   
+    padding: 20px; 
+}
+.offer-card-content:hover{
+    box-shadow: 0px 5px 20px;
+}
+.offer-card-content img{
+    width: 130px;
+    height: 130px;
+}
+.offer-card-content h3{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.2rem;
+    color: rgb(19, 15, 88); 
+    font-weight: bold;
+}
+.offer-card-content p{
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* what we offer design ends */
+
+
+/* why us design starts */
+
+.why-us{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+    
+}
+.trapezoid{
+    width: 100%;
+    height: 550px;
+    background-color:rgb(248, 123, 101);
+    border-radius: 18% 82% 86% 14% / 30% 51% 49% 70% ;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+
+.trapezoid-text{
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.trapezoid-text p{
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.trapezoid img{
+    width: 400px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+
+/* why us design ends */
+
+/* what people say starts */
+.what-people-say{
+    position: relative;
+    height: auto;
+    background: #eee;
+    margin: 40px;
+    padding: 0;
+}
+.what-people-say h1{
+    text-align: center;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.swiper-wrapper{
+    padding: 50px;
+    width: 320px;
+}
+
+.slider-card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0px 25px;
+    
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+/* what people say ends */
+
+/* ask question design starts */
+
 .ask-question{
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 .my-question-form{
     display: flex;
     flex-direction: row;
@@ -66,9 +257,41 @@ body{
 .my-text-btn{
     margin: 20px;
 }
+
 .my-ans{
     
     margin-top: 10px;
     margin-left: 340px;
     margin-right: 320px;
+}
+
+/* ask question design ends */
+
+/* contribution design starts */
+
+.my-contribute-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.my-question-text{
+    width: 610px;
+    height: 38px;
+    padding: 15px;
+}
+.ans-text-area{
+    width: 610px;
+    height: 300px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* contribution design end */
+footer{
+    background-color: rgb(8, 6, 48);
+    padding: 10px;
+    color: white;
 }
