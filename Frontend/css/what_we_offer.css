@@ -1,0 +1,50 @@
+/* what we offer design starts */
+.what-we-offer{
+    margin-top: 120px;
+}
+.offer-card{
+    display: flex;
+}
+.offer-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 80px;   
+    padding: 20px; 
+}
+.offer-card-content button{
+    height: auto;
+    width: auto;
+    border: none;
+    background-color: rgb(19, 15, 88);
+    padding: 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+}
+.offer-card-content:hover{
+    box-shadow: 0px 5px 20px;
+}
+.offer-card-content img{
+    width: 130px;
+    height: 130px;
+}
+.offer-card-content h3{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.2rem;
+    color: rgb(19, 15, 88); 
+    font-weight: bold;
+}
+.offer-card-content p{
+    font-size: 1rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* what we offer design ends */

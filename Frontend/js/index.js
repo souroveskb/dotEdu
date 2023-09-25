@@ -7,3 +7,8 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+AOS.init({
+  offset: 330,
+  duration:1000
+});

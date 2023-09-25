@@ -1,0 +1,111 @@
+/* what people say starts */
+.say-heading{
+    text-align: center;
+    margin-top: 70px;
+}
+.what-people-say{
+    position: relative;
+    height: auto;
+    background: #eee;
+    margin: 40px;
+    padding: 0;
+    border-radius: 30px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.swiper-wrapper{
+    padding: 50px;
+    width: 320px;
+}
+
+.slider-card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.card-content button{
+    height: auto;
+    width: auto;
+    border: none;
+    background-color: #4070f4;
+    padding: 8px 12px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0px 25px;
+    
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #FFF;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 1rem;
+    color: #707070;
+    text-align: center;
+}
+
+/* what people say ends */
