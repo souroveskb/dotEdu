@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
     
     
 }
@@ -36,4 +36,45 @@
 }
 
 
+@media only screen and (max-width: 768px){
+    .trapezoid img{
+        width: 300px;
+        height: 300px;
+        
+    }
+    .trapezoid-text{
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .trapezoid-text h2{
+        font: 1.1rem;
+    }
+    .trapezoid-text p{
+        font-size: 1rem;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .trapezoid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .trapezoid img{
+        width: 180px;
+        height: 180px;
+        
+    }
+    .trapezoid-text h2{
+        font: 1rem;
+    }
+    .trapezoid-text{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
 /* why us design ends */

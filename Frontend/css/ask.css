@@ -1,0 +1,43 @@
+/* ask question design starts */
+
+.ask-question{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ask-question img{
+    width: 50%;
+}
+.ask-question form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.my-question-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.my-text-input{
+    width: 400px;
+    height: 38px;
+    padding: 15px;
+}
+.my-text-btn{
+    margin: 20px;
+}
+
+.my-ans{
+    
+    margin-top: 10px;
+}
+
+/* ask question design ends */

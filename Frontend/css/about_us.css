@@ -51,4 +51,66 @@
 .our-services h2{
     margin-bottom: 80px;
 }
-/* our services design starts */
+
+/* our services design ends */
+
+@media only screen and (max-width: 1024px){
+    .about-us-content{
+        margin-top: 40px;
+    }
+    .about-us-content img{
+        width: 400px;
+        margin: 0 40px;
+    }
+    .about-us-description{
+        width: 50%;
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-us-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us-description{
+        width: 100%;
+        margin-left: 50px;
+        margin-right: auto;
+
+    }
+    .about-us-content img{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .about-us h2{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .about-us-description{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: auto;
+
+    }
+    .about-us-description p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .about-us h2{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .about-us-description p{
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    .about-us h2{
+        font-size: 1.2rem;
+    }
+}
+

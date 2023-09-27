@@ -16,7 +16,7 @@ public class EmailSenderServiceImpl implements EmailSenderService{
         try{
             SimpleMailMessage mailMessage = new SimpleMailMessage();
 
-            mailMessage.setFrom("${spring.mail.username}");
+            mailMessage.setFrom("adibskitto@gmail.com");
             mailMessage.setTo(email.getReceiver());
             mailMessage.setSubject(email.getSubject());
             mailMessage.setText(email.getMsgBody());

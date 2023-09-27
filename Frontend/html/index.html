@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     
     <!-- link css file -->
     <link rel="stylesheet" href="../css/intro.css">
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="../css/about_us.css">
     <link rel="stylesheet" href="../css/why_us.css">
     <link rel="stylesheet" href="../css/their_thoughts.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -33,7 +36,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="#"><span class="my-brand">dotEdu</span></a>
+                    <a class="navbar-brand" href="../html/home.html"><span class="my-brand">dotEdu</span></a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -42,10 +45,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Ask</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../html/ask.html">Ask</a></li>
                             <li class="nav-item"><a class="nav-link" href="contribute.html">Contribute</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../html/login.html">Login</a></li>
                         </ul>
                     </div>
 
@@ -57,8 +60,8 @@
                 <img class="anim" src="../images/intro.jpg">
                 <div class="intro-text">
                     <h2 class="anim">DotEdu</h2>
-                    <p class="anim">In today's digital age, the field of education is undergoing a remarkable transformation, largely thanks to advancements in artificial intelligence (AI) technology. One of the most promising applications of AI in education is the development of AI-based question answering software.</p>
-                    <button type="button" class="btn btn-primary anim">Get Started</button>
+                    <p class="anim">In today's digital age, the field of education is undergoing a remarkable transformation, largely thanks to advancements in artificial intelligence (AI) technology. One of the most promising applications of AI in education is the development of AI-based question answering software</p>
+                    <button onclick="goLoginPage()" type="button" class="btn btn-primary anim">Get Started</button>
                 </div>
                 
             </div>
@@ -89,7 +92,7 @@
 
             <div class="offer-card-content">
                 <img src="../images/name_entity.jpg">
-                <h3>Name-Entity Recognition</h3>
+                <h3>Name-Entity Recognize</h3>
                 <p>We build progressive web applications that don’t kill your SEO efforts, which rewards your business when you have a fast and smooth web app with limited retention</p>
             </div>
 
@@ -175,21 +178,21 @@
                 <img src="../images/qa.jpg">
                 <h3>Question-Answering</h3>
                 <p>We build progressive web applications that don’t kill your SEO efforts, which rewards your business when you have a fast and smooth web app with limited retention</p>
-                <button class="">Get Started</button>
+                <button onclick="goAskPage()" class="">Get Started</button>
             </div>
 
             <div class="offer-card-content">
                 <img src="../images/contribute.jpg">
                 <h3>Contribute to System</h3>
                 <p>We build progressive web applications that don’t kill your SEO efforts, which rewards your business when you have a fast and smooth web app with limited retention</p>
-                <button class="">Get Started</button>
+                <button onclick="goContributionPage()" class="">Get Started</button>
             </div>
 
             <div class="offer-card-content">
                 <img src="../images/review.jpg">
-                <h3>Review Question-Answer</h3>
+                <h3>Review Answer</h3>
                 <p>We build progressive web applications that don’t kill your SEO efforts, which rewards your business when you have a fast and smooth web app with limited retention</p>
-                <button class="">Get Started</button>
+                <button onclick="goReviewPage()" class="">Get Started</button>
             </div>
 
         </div>
@@ -204,7 +207,7 @@
             <div class="trapezoid-text">
                 <h2>Tailored To Fit Your <span style="color: rgb(8, 2, 119); font-weight: bold;">Need</span> </h2>
                 <p>FutureIT looks beyond conventional solutions to develop disruptive web products. Our skilled and dedicated web development team understands your needs and leverage the dynamism of modern web frameworks to create business valued web applications.</p>
-                <button type = "button" class="btn btn-dark">Get Started</button>
+                <button type = "button" onclick = "goLoginPage()" class="btn btn-dark">Get Started</button>
             </div>
             <img src="../images/shapeImage.jpg">
 
@@ -309,25 +312,39 @@
 
 
 
-    <!-- ask question section starts -->
-    <section class="ask-question">
-        <h2 style="text-align: center;">Ask Your Question</h2>
-        <div>
-            <form class="my-question-form">
-                <input type = "text" class="my-text-input" placeholder="আপনার প্রশ্ন লিখুন">
-                <button type="submit" class="btn btn-primary my-text-btn">Submit</button>
-            </form>
-        </div>
-        <div>
-            <p class="my-ans"></p>
-        </div>
-    </section>
-
-    <!-- ask question section end -->
-
     <!-- footer section starts -->
     <footer>
-        <p style="text-align: center;">All rights reserved</p>
+        <div class="footer-first">
+            <h2>dotEdu</h2>
+            <p>In today's digital age, the field of education is undergoing a remarkable transformation, largely thanks to advancements in artificial intelligence (AI) technology. One of the most promising applications of AI in education is the development of AI-based question answering software</p>
+        </div>
+        <div class="footer-second">
+            <h3>Quick Links</h3>
+            <div class="quick-links">
+                <a href="../html/index.html">Home</a>
+                <a href="../html/ask.html">Ask</a>
+                <a href="../html/contribute.html">Contribute</a>
+                <a href="#">Review</a>
+                <a href="../html/login.html">Login</a>
+            </div>
+            
+
+        </div>
+        <div class="footer-third">
+            <h3>Contact Us</h3>
+            <div class="footer-third-content">
+                <span class="material-symbols-outlined">mail</span>
+                <p>service@dotEdu.org</p>
+            </div>
+            <div class="footer-third-content">
+                <span class="material-symbols-outlined">call</span>
+                <p>0156*********</p>
+            </div>
+            <div class="footer-third-content">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>Dhaka University, Dhaka</p>
+            </div>
+        </div>        
     </footer>
     
 

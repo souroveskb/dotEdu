@@ -1,19 +1,42 @@
+.contribution{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contribution img{
+    width: 50%;
+}
+
 .my-contribute-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    width: 50%;
 }
 
-.my-question-text{
-    width: 610px;
+.my-contribute-form input{
+    width: 450px;
     height: 38px;
     padding: 15px;
 }
-.ans-text-area{
-    width: 610px;
+.my-contribute-form textarea{
+    width: 450px;
     height: 300px;
     padding: 15px;
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 425px){
+    .contribution{
+        flex-direction: column;
+    }
+    .my-contribute-form input{
+        width: 300px;
+    }
+    .my-contribute-form textarea{
+        width: 300px;
+    }
 }
