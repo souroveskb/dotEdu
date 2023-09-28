@@ -24,15 +24,24 @@ public class AuthController {
 
         return ResponseEntity.ok(service.authenticate(request));
     }
+
+    //find user details using email
     @GetMapping("/getUser/{email}")
     public User getUser(@PathVariable String email){
         return service.findByEmail(email);
     }
 
+    //update verification status of verified user
+    @PutMapping("/verify/update/{id}")
+    public User updateFood(@PathVariable int id, @RequestBody User user){
+        user.setId(id);
+        return service.updateVerificationStatus(user);
+    }
     //demo controller
     @GetMapping("/demo")
     public ResponseEntity<String> sayHello(){
         return ResponseEntity.ok("Hello from demo");
     }
+
 
 }

@@ -1,0 +1,40 @@
+.verify{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Inter',sans-serif;
+    background-color: #FFFFFF;
+}
+.verify p{
+    font-size: 1.1rem;
+}
+.verify input{
+    background-color: #eee;
+    border: none;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin: 8px 0;
+    width: 50%;
+}
+.verify a{
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.verify button{
+    border-radius: 2em;
+    border: 1px solid #fff;
+    background: #21a9d3;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1em 5em;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
