@@ -14,7 +14,7 @@ public class EmailSenderController {
 
     @Autowired
     private EmailSenderService emailService;
-    @CrossOrigin(origins = "http://127.0.0.1:5500")
+//    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping("/api/auth/sendmail")
     public String sendMail(@RequestBody Email emailDetails){
         return emailService.sendSimpleMail(emailDetails);

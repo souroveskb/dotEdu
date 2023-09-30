@@ -24,6 +24,7 @@
     width: 100%;
     text-align: center;
     padding-top: 20px;
+    
 }
 .review-section input{
     background-color: #eee;
@@ -42,6 +43,6 @@
     cursor: pointer;
     margin-left: 10px;
 }
-.unreviewed-question p{
-    margin-bottom: 40px;
+#unreviewed-question p{
+    font-family: 'Tiro Bangla',sans-serif;
 }

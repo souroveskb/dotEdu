@@ -72,6 +72,8 @@ $(document).ready(function() {
                     $('#verified-status').text('Verification Failed !!!')
                 }
             });
+
+            localStorage.removeItem('code');
             
         }
         else{

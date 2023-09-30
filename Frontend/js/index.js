@@ -39,5 +39,5 @@ function goContributionPage(){
 }
 
 function goReviewPage(){
-  window.location.href = "../html/review.html"
+  window.location.href = "../html/Review.html"
 }

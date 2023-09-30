@@ -19,6 +19,7 @@ drop table dotEdu.contribution_reviews
 
 select * from `dotEdu`.contribution
 select * from `dotEdu`.review
+select * from `dotEdu`.history
 select *
 from `dotEdu`.contribution as c left join `dotEdu`.review as r 
 on c.id = r.contribution_id and r.reviewer = "tasmim.adib@gmail.com"
@@ -27,7 +28,10 @@ limit  4;
 
 select *
 from `dotEdu`.contribution as c join `dotEdu`.review as r 
-on c.id = r.contribution_id and r.reviewer = "adibskitto@gmail.com"]]></console>
+on c.id = r.contribution_id and r.reviewer = "adibskitto@gmail.com"
+
+DELETE FROM `dotEdu`.`user`
+WHERE id = 5;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">

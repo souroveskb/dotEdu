@@ -15,19 +15,21 @@
     align-items: center;
     margin-top: 40px;
     width: 50%;
-    font-family: 'Inter', sans-serif;
+    
 }
 
 .my-contribute-form input{
     width: 450px;
     height: 38px;
     padding: 15px;
+    font-family: 'Tiro Bangla',sans-serif;
 }
 .my-contribute-form textarea{
     width: 450px;
     height: 300px;
     padding: 15px;
     margin-top: 30px;
+    font-family: 'Tiro Bangla',sans-serif;
 }
 
 @media only screen and (max-width: 425px){
