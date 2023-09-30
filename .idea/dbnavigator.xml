@@ -13,7 +13,21 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ffa54095-2233-4799-934a-30298b121f8d">
-      <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
+      <console name="Connection" type="STANDARD" schema="mysql" session="Main"><![CDATA[drop table dotEdu.review
+drop table dotEdu.contribution
+drop table dotEdu.contribution_reviews
+
+select * from `dotEdu`.contribution
+select * from `dotEdu`.review
+select *
+from `dotEdu`.contribution as c left join `dotEdu`.review as r 
+on c.id = r.contribution_id and r.reviewer = "tasmim.adib@gmail.com"
+where r.reviewer is null and c.contributor != "tasmim.adib@gmail.com"
+limit  4;
+
+select *
+from `dotEdu`.contribution as c join `dotEdu`.review as r 
+on c.id = r.contribution_id and r.reviewer = "adibskitto@gmail.com"]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -24,6 +38,11 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="ffa54095-2233-4799-934a-30298b121f8d" dataset="dotEdu.user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ffa54095-2233-4799-934a-30298b121f8d" dataset="dotEdu.contribution" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="ffa54095-2233-4799-934a-30298b121f8d" dataset="dotEdu.review" active-filter-id="EMPTY_FILTER" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -515,5 +534,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>

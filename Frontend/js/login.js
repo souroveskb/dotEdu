@@ -92,7 +92,7 @@ $(document).ready(function(){
       	},
 
       error: function(jqXHR, textStatus, errorThrown){
-        $('#register-status-text').text('we have encountered ' + errorThrown.error);
+        $('#register-status-text').text('we have encountered ' + errorThrown);
       }
     });
   });

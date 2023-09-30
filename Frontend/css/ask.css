@@ -3,22 +3,15 @@
 .ask-question{
     margin-top: 30px;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    min-height: 400px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family: 'Inter', sans-serif;
 }
 
-.ask-question img{
-    width: 50%;
-}
-.ask-question form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 .my-question-form{
     display: flex;
     flex-direction: row;
@@ -27,17 +20,32 @@
     
 }
 .my-text-input{
-    width: 400px;
-    height: 38px;
-    padding: 15px;
+    background-color: #eee;
+    border: none;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin: 8px 0;
+    width: 50%;
 }
 .my-text-btn{
     margin: 20px;
 }
 
 .my-ans{
-    
-    margin-top: 10px;
+    margin: 10px;
 }
 
+
+@media only screen and (max-width: 425px){
+    .ask-question{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .ask-question{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 /* ask question design ends */
