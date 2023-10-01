@@ -12,6 +12,7 @@ from langchain.prompts import PromptTemplate
 from .EVstore import initializePinecone, existingVectorstore, newDataLoad, \
      extractDocMetaData, createIndex, testing, addToIndex, pinecone
 
+from fastapi.middleware.cors import CORSMiddleware
 
 
 load_dotenv()
@@ -76,6 +77,21 @@ def get_answer(query):
 
 app = FastAPI()
 
+
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:5001",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/reset/")
 async def reset_vectorstores():
