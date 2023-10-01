@@ -1,0 +1,8 @@
+fastapi
+python-dotenv
+pydantic
+uvicorn
+openai
+langchain
+pinecone-client
+tiktoken
