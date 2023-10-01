@@ -10,7 +10,9 @@
     margin-left: 70px;
     margin-right: 70px;
     font-family: 'Inter', sans-serif;
+
 }
+
 
 .my-question-form{
     display: flex;
@@ -35,9 +37,18 @@
 .my-ans{
     margin: 10px;
     font-family: 'Tiro Bangla',sans-serif;
+    text-align: center;
 }
 
-
+.ask-save-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ask-save-btn-div button{
+    display: none;
+}
 @media only screen and (max-width: 425px){
     .ask-question{
         margin-left: 20px;

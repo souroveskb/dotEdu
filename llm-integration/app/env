@@ -1,0 +1,5 @@
+openAI_apikey = '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'
+huggingface_apikey = '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'
+
+pinecone_apikey='50802ace-eb9d-4049-b210-6f826d1f94eb'
+pinecode_env='gcp-starter'
