@@ -58,12 +58,16 @@
     <section class="ask-question">
         <form >
             <div class="my-question-form">
-                <input type = "text" class="my-text-input" placeholder="আপনার প্রশ্ন লিখুন">
-                <button type="submit" class="btn btn-primary my-text-btn">Submit</button>
+                <input id="ask-question-input" type = "text" class="my-text-input" placeholder="আপনার প্রশ্ন লিখুন">
+                <button id="ask-question-btn" type="submit" class="btn btn-primary my-text-btn">Submit</button>
             </div>
-            <p class="my-ans"></p>
+            <p id="ask-ans-section" style="text-align: center;" class="my-ans"></p>
+            
         </form>
-        
+        <div class="ask-save-btn-div">
+            <button id="ask-save-btn" class="btn btn-primary">Save the Item</button>
+            <p id="history-section" style="text-align: center;" class="my-ans"></p>
+        </div>
         
     </section>
 
