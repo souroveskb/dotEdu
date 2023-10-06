@@ -1,2 +1,3 @@
 application.properties
 application-docker.properties
+docker-compose.yml
