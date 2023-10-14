@@ -16,7 +16,7 @@ load_dotenv()
 
 os.environ["PINECONE_API_KEY"] = os.environ.get('pinecone_apikey')
 os.environ["PINECONE_ENV"] = os.environ.get('pinecode_env')
-os.environ["OPENAI_API_KEY"] = os.environ.get('openAI_apikey')
+os.environ["OPENAI_API_KEY"] = os.environ.get('OPENAI_API_KEY')
 
 
 embeddings = OpenAIEmbeddings()

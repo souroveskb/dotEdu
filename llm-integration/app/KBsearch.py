@@ -12,14 +12,13 @@ from langchain.prompts import PromptTemplate
 from .EVstore import initializePinecone, existingVectorstore, newDataLoad, \
      extractDocMetaData, createIndex, testing, addToIndex, pinecone
 
-from fastapi.middleware.cors import CORSMiddleware
 
 
 load_dotenv()
 
 os.environ["PINECONE_API_KEY"] = os.environ.get('pinecone_apikey')
 os.environ["PINECONE_ENV"] = os.environ.get('pinecode_env')
-os.environ["OPENAI_API_KEY"] = os.environ.get('openAI_apikey')
+os.environ["OPENAI_API_KEY"] = os.environ.get('OPENAI_API_KEY')
 
 
 embeddings = OpenAIEmbeddings()
@@ -77,14 +76,6 @@ def get_answer(query):
 
 app = FastAPI()
 
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 @app.get("/reset/")
 async def reset_vectorstores():
